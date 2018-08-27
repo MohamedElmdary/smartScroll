@@ -21,7 +21,7 @@ var smartScroll = (function ($, $w) {
         id = [data-scroll] => value
     */
     function smartScroll(options, cb) {        
-        if (links.length < 0) throw new Error("data-scroll attr must be added");
+        if (links.length <= 0) throw new Error("data-scroll attr must be added");
         links.each(function () {
             var link = $(this);
             link.on("click", function (e) {
@@ -82,4 +82,4 @@ var smartScroll = (function ($, $w) {
         }
     }
      return {init: init};
-})(jQuery, window, document); 
+})(jQuery, window); 
