@@ -21,6 +21,10 @@ var smartScroll = (function ($, $w) {
         uses animation (jQuery function)
         provide error in case of couldn't find the specific [id] in dom
         id = [data-scroll] => value
+        @param {object} options - smart scroll options
+        @param {number} options.speed - smart scroll speed default is 500
+        @param {number} options.offset - smart scroll elements offset
+        @param {string} options.activeClass - active class name
     */
     function smartScroll(options, cb) {        
         if (links.length < 0) throw new Error("data-scroll attr must be added");
@@ -60,11 +64,8 @@ var smartScroll = (function ($, $w) {
         and provide default values for options
     */
     function init(options, cb) {
-        cb = typeof(cb) === "function"? cb : function () {return null;};
-        if (typeof(options) === "function") {
-            cb = options;
-        }
-        options = typeof(options) === "object"? options : {};
+        options = options || {};
+        cb = cb || function () {return null;};
 
         var defaultOptions = {
             speed: options.speed|| 500,
