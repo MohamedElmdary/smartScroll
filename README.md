@@ -1,5 +1,4 @@
-# smartScroll-1
-smart scroll jquery plugin
+
 # Smart Scroll
 
 ## overview
