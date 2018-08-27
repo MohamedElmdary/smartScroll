@@ -27,7 +27,7 @@ an sync navigation active link with the section aspect to it
          <nav>
                 <ul>
                     <li><a href="#!" data-scroll="page1">page1</a></li>
-                    <li><a href="#!" data-scroll="page2">page2</a></li>
+                    <li><a href="#!" data-scroll="#page2">page2</a></li>
                     <li><a href="#!" data-scroll="page3">page3</a></li>
                     <li><a href="#!" data-scroll="#page4">page4</a></li>
                     <li><a href="#!" data-scroll="page5">page5</a></li>
@@ -38,7 +38,7 @@ an sync navigation active link with the section aspect to it
   - it should has the same value as the id used for the section
    
         
-          <div id="#page3">page3</div>
+          <div id="page3">page3</div>
           
           <li><a href="#!" data-scroll="page3">page3</a></li>
 

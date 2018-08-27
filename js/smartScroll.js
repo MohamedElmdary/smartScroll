@@ -1,6 +1,6 @@
 /*
     Creator: Mohamed Rabie Rabie Elmdary
-    About: Mean stack developer
+    About:  Mean stack developer
     github: https://github.com/MohamedElmdary
     codepen: https://codepen.io/mohamed9714/
     License: MIT
